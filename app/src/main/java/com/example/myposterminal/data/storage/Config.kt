@@ -21,7 +21,7 @@ object Config {
 
     suspend fun getServerPublicKey(context: Context): String {
         val prefs = context.keysDataStore.data.first()
-        return prefs[SERVER_PUBLIC_KEY] ?: """MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAotrvl7yBWgbsFvtxOTw7..."""
+        return prefs[SERVER_PUBLIC_KEY] ?: ""
     }
 
     suspend fun getMerchantId(context: Context): String {
